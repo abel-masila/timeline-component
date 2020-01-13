@@ -132,3 +132,24 @@ h1 {
   right: auto;
   left: -40px;
 }
+
+@media only screen and (max-width: 767px) {
+  .timeline-item-content,
+  .timeline-item:nth-child(odd) .timeline-item-content {
+    padding: 15px 10px;
+    text-align: center;
+    align-items: center;
+  }
+  .timeline-item-content .tag {
+    width: calc(100% - 10px);
+  }
+  .timeline-item-content time {
+    margin-top: 20px;
+  }
+  .timeline-item-content a {
+    text-decoration: underline;
+  }
+  .timeline-item-content a::after {
+    display: none;
+  }
+}

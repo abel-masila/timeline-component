@@ -4,7 +4,7 @@ import "./App.css";
 
 const App = () => (
   <>
-    <h1>Timeline</h1>
+    <h1>React Timeline Component</h1>
     <Timeline />
   </>
 );
