@@ -81,3 +81,54 @@ h1 {
   left: -7.5px;
   box-shadow: -1px 1px 1px rgba(0, 0, 0, blu0e, 0.2);
 }
+
+.timeline-item-content .tag {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  letter-spacing: 1px;
+}
+.timeline-item:nth-child(odd) .timeline-item-content .tag {
+  left: auto;
+  right: 5px;
+}
+.timeline-item-content time {
+  color: #777;
+  font-size: 12px;
+}
+.timeline-item-content p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 15px 0;
+  max-width: 250px;
+}
+.timeline-item-content a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+.timeline-item-content a::after {
+  content: " ►";
+  font-size: 12px;
+}
+.timeline-item-content .circle {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 10px);
+  right: -40px;
+  z-index: 100;
+  border: 3px solid #e17b77;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content .circle {
+  right: auto;
+  left: -40px;
+}

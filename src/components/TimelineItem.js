@@ -6,7 +6,7 @@ const TimelineItem = ({ data }) => {
         <span className="tag" style={{ background: data.category.color }}>
           {data.category.tag}
         </span>
-        <time>{data.time}</time>
+        <time>{data.date}</time>
         <p>{data.text}</p>
         {data.link && (
           <a href={data.link.url} target="_blank" rel="noopener noreferrer">
