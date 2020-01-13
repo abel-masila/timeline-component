@@ -52,5 +52,32 @@ h1 {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  width: 40%;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 15px;
+  text-align: right;
+  position: relative;
+}
+.timeline-item:nth-child(odd) .timeline-item-content {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.timeline-item-content::after {
+  content: "";
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  position: absolute;
+  right: -7.5px;
+  top: calc(50% - 7.5px);
+  box-shadow: 1px -1px 1px rgba(0, 0, 0, blu0e, 0.2);
+}
+.timeline-item:nth-child(odd) .timeline-item-content::after {
+  right: auto;
+  left: -7.5px;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, blu0e, 0.2);
 }
